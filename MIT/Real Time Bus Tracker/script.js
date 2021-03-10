@@ -1,7 +1,6 @@
 //TODO add your MAPBOX token here:
 mapboxgl.accessToken = 'YOUR-API-CODE-HERE';
 
-
 // Load Light Styled Map
 var map = new mapboxgl.Map({
 	container: "map",
@@ -39,7 +38,7 @@ async function run() {
 	//timeStamp for the buses
 	console.log(new Date());
 
-    // i for colors array. Used inside forEach below
+	// i for colors array. Used inside forEach below
 	let i = 0;
 
 	locations.forEach((stop) => {
@@ -49,11 +48,7 @@ async function run() {
 			markersArray[stop.id] = new mapboxgl.Marker({
 				color: busColor[i],
 			});
-		} else {
-            if (markersArray[stop.id]._lngLat.lng == stop.attributes.longitude) {
-                console.log('Bus ' + stop.id + ' of color ' + busColor[i] +' is static')
-            }
-        }
+		}
 		markersArray[stop.id]
 			.setLngLat([stop.attributes.longitude, stop.attributes.latitude])
 			.addTo(map);
@@ -82,3 +77,4 @@ async function getBusLocations() {
 }
 
 run();
+
