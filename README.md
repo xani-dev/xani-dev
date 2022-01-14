@@ -1,5 +1,6 @@
 
-[![Xani](https://github.com/xani-dev/xani-dev/blob/main/gitHub-Hero.png)](https://thepink.dev)
+[![Xani](https://user-images.githubusercontent.com/71361700/149557978-497200ed-e41b-4d54-a2e7-39bfa3bc5e9f.png)](https://thepink.dev)
+
 
 <!--
 **xani-dev/xani-dev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
